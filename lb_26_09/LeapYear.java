@@ -5,16 +5,23 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.StringTokenizer;
  
-public class st {
+public class LeapYear {
  
 	public static void main(String[] args) {
-		FastScanner fs=new FastScanner();
-		int T=fs.nextInt();
-		int ar[] = new int[10];
-		for ( int i = 0 ; i < 10 ; ++i ) {
-			ar[i] = 100 - i;
+		FastScanner fs = new FastScanner ();
+		System.out.print ( "Enter the Year : " );
+		int n = fs.nextInt ();
+		boolean ly = false;
+		if ( n % 4 == 0 && n % 100 != 0 ) {
+			ly = true;
+		} else if ( n % 400 == 0 ) {
+			ly = true;
 		}
-		for ( int i = 0 ; i < 10 ; ++i ) System.out.println ( ar[i] );
+		if ( ly == true ) {
+			System.out.println ( n + " is a Leap year!." );
+		} else {
+			System.out.println ( n + " is not a Leap year." );
+		}
 	}
 
 	static void sort(int[] a) {
@@ -51,3 +58,4 @@ public class st {
 	}
 
 }
+
