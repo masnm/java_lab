@@ -2,8 +2,8 @@ package shapeDemo;
 
 public class Circle {
 
-	private double radious;
-	private String color;
+	public double radious;
+	public String color;
 
 	Circle () {
 	}
@@ -13,7 +13,7 @@ public class Circle {
 		this.color = col;
 	}
 
-	private double getArea () {
+	public double getArea () {
 		return radious * radious * Math.PI ;
 	}
 
