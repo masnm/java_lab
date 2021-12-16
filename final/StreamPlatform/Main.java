@@ -1,13 +1,16 @@
 package StreamPlatform;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Scanner;
 
 import streamingexception.*;
+import StreamPlatform.adir.*;
 
 public class Main {
  
 	public static void main(String[] args) {
+
+		adir ad = new adir();
+		ad.sayHi();
+
+		System.out.println("Hello");
 		Subscription s = new Subscription ();
 		try {
 			s.buySubscription ( "123456", "Mastercard", 123 );
