@@ -12,6 +12,9 @@ public class Teacher {
 	public int getTeacherID() {
 		return teacherID;
 	}
+    public void setNumber ( int num ) {
+	this.number = num;
+    }
 	public void setTeacherID(int teacherID) {
 		this.teacherID = teacherID;
 	}

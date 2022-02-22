@@ -8,5 +8,9 @@ public class Main {
 		Assign.assignCourse(id, "AI");
 		System.out.println(Assign.assignCourse(id, "AI").getCourse());
 		System.out.println(Assign.assignCourse(id, "AI").getTeacherID());
+		System.out.println("So you can do stuff like vim");
+	}
+	public static hello () {
+		System.out.println ( "Saying hello from Emacs" );
 	}
 }
